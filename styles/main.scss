@@ -1,4 +1,10 @@
 
+$break-tablet: 768px;   
+
+body {
+    opacity: 0.99;
+    background: #937FE1;
+}
 div.main {
     opacity: 0.99;
     background: #937FE1;
@@ -14,6 +20,11 @@ h2 {
     line-height: 24px;
     text-align: center;
     text-shadow: 0px 1px 1px rgba(0,0,0,0.50);
+    @media screen and (min-width: $break-tablet) {
+        margin: 2rem 0;
+        font-size: 24px;
+        letter-spacing: 0.35px;
+    }
 }
 
 .box {
@@ -115,7 +126,6 @@ h2 {
             letter-spacing: 0.44px;
             line-height: 24px;
             margin: 0;
-            text-align: center;
         }
         .close {
             fill: #AF93F1;
