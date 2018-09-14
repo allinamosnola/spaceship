@@ -18,7 +18,7 @@ h2 {
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5); }
   @media screen and (min-width: 768px) {
     h2 {
-      margin: 2rem 0;
+      margin: 41px 0 19px 0;
       font-size: 24px;
       letter-spacing: 0.35px; } }
 
@@ -30,14 +30,15 @@ h2 {
   min-height: 113px; }
   @media screen and (min-width: 768px) {
     .box {
-      min-height: 203px; } }
+      min-height: 203px;
+      margin-right: 34px; } }
   .box .legend {
     text-align: center;
     margin: 1rem 0; }
     @media screen and (min-width: 768px) {
       .box .legend {
         margin: 2rem 0; } }
-    .box .legend p {
+    .box .legend > p {
       font-family: font91361;
       font-size: 16.33px;
       font-weight: bold;
@@ -45,7 +46,7 @@ h2 {
       letter-spacing: 0.48px;
       line-height: 19px; }
       @media screen and (min-width: 768px) {
-        .box .legend p {
+        .box .legend > p {
           font-size: 25px;
           letter-spacing: 0.65px;
           line-height: 29px;
@@ -56,8 +57,7 @@ h2 {
       font-weight: bold;
       color: #FFFFFF;
       letter-spacing: 0.17px;
-      line-height: 15px;
-      margin-top: 8px; }
+      line-height: 15px; }
       @media screen and (min-width: 768px) {
         .box .legend button p {
           font-size: 19px;
@@ -77,10 +77,16 @@ button, button.pink, button.green {
 button.pink {
   background-image: linear-gradient(-180deg, #FF6BCA 0%, #FF78CF 42%, #FF00A8 100%);
   box-shadow: 0px 1px 1px 1px #AC0C75; }
+  button.pink p {
+    margin-top: 12px;
+    margin-bottom: 6px; }
 
 button.green {
   background-image: linear-gradient(-180deg, #86BA2B 0%, #2A740D 100%);
   box-shadow: 0px 1px 1px 1px #1C4F06; }
+  button.green p {
+    margin-top: 11px;
+    margin-bottom: 7px; }
 
 .status, .offers .box .status, .offers .box.opacity .status {
   background: #E9F2DF;
