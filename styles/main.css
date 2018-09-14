@@ -1,3 +1,7 @@
+body {
+  opacity: 0.99;
+  background: #937FE1; }
+
 div.main {
   opacity: 0.99;
   background: #937FE1;
@@ -12,6 +16,11 @@ h2 {
   line-height: 24px;
   text-align: center;
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5); }
+  @media screen and (min-width: 768px) {
+    h2 {
+      margin: 2rem 0;
+      font-size: 24px;
+      letter-spacing: 0.35px; } }
 
 .box {
   background: #FFFFFF;
@@ -19,9 +28,15 @@ h2 {
   border-radius: 4px;
   margin-bottom: 11px;
   min-height: 113px; }
+  @media screen and (min-width: 768px) {
+    .box {
+      min-height: 203px; } }
   .box .legend {
     text-align: center;
     margin: 1rem 0; }
+    @media screen and (min-width: 768px) {
+      .box .legend {
+        margin: 2rem 0; } }
     .box .legend p {
       font-family: font91361;
       font-size: 16.33px;
@@ -29,6 +44,12 @@ h2 {
       color: #000000;
       letter-spacing: 0.48px;
       line-height: 19px; }
+      @media screen and (min-width: 768px) {
+        .box .legend p {
+          font-size: 25px;
+          letter-spacing: 0.65px;
+          line-height: 29px;
+          min-height: 86px; } }
     .box .legend button p {
       font-family: font91361;
       font-size: 14.41px;
@@ -37,12 +58,21 @@ h2 {
       letter-spacing: 0.17px;
       line-height: 15px;
       margin-top: 8px; }
+      @media screen and (min-width: 768px) {
+        .box .legend button p {
+          font-size: 19px;
+          letter-spacing: 0.21px;
+          line-height: 19.5px;
+          width: 188px; } }
 
 button, button.pink, button.green {
   border-radius: 2px;
   border: none;
   text-transform: uppercase;
   height: 28px; }
+  @media screen and (min-width: 768px) {
+    button, button.pink, button.green {
+      height: 38px; } }
 
 button.pink {
   background-image: linear-gradient(-180deg, #FF6BCA 0%, #FF78CF 42%, #FF00A8 100%);
@@ -61,6 +91,11 @@ button.green {
     fill: #7ED321;
     width: 32px;
     margin-top: 3rem; }
+    @media screen and (min-width: 768px) {
+      .status .tick, .offers .box .status .tick {
+        margin-top: 4.7rem;
+        height: 42px;
+        width: 42px; } }
 
 .offers .box .status, .offers .box.opacity .status {
   background: #FFECD6;
@@ -73,10 +108,11 @@ button.green {
   min-height: 113px; }
 
 .offers .box.opacity {
-  opacity: 0.2; }
+  opacity: 0.2;
+  margin-top: 28px; }
   .offers .box.opacity .tick {
     fill: #ffffff;
-    margin-top: 2rem; }
+    margin-top: 4.7rem; }
 
 .alert {
   background: #E7E2FE;
@@ -89,9 +125,12 @@ button.green {
     color: #521DA9;
     letter-spacing: 0.44px;
     line-height: 24px;
-    margin: 0;
-    text-align: center; }
+    margin: 0; }
   .alert .close {
     fill: #AF93F1; }
+
+@media screen and (min-width: 768px) {
+  .row {
+    min-height: 203px; } }
 
 /*# sourceMappingURL=main.css.map */
