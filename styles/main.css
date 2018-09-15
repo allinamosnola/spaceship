@@ -26,15 +26,16 @@ h2 {
   background: #FFFFFF;
   box-shadow: 0px 2px 0px 0px #715EBB;
   border-radius: 4px;
-  margin-bottom: 11px;
-  min-height: 113px; }
+  margin-bottom: 15px; }
   @media screen and (min-width: 768px) {
     .box {
       min-height: 203px;
       margin-right: 34px; } }
   .box .legend {
     text-align: center;
-    margin: 1rem 0; }
+    min-height: 106px;
+    line-height: 55px;
+    display: inline-block; }
     @media screen and (min-width: 768px) {
       .box .legend {
         margin: 2rem 0; } }
@@ -44,7 +45,11 @@ h2 {
       font-weight: bold;
       color: #000000;
       letter-spacing: 0.48px;
-      line-height: 19px; }
+      line-height: 19px;
+      min-height: 38px;
+      margin: 0;
+      margin-top: 15px;
+      display: inline-block; }
       @media screen and (min-width: 768px) {
         .box .legend > p {
           font-size: 25px;
@@ -62,31 +67,39 @@ h2 {
         .box .legend button p {
           font-size: 19px;
           letter-spacing: 0.21px;
-          line-height: 19.5px;
-          width: 188px; } }
+          line-height: 19.5px; } }
 
 button, button.pink, button.green {
   border-radius: 2px;
   border: none;
   text-transform: uppercase;
-  height: 28px; }
+  height: 28px;
+  cursor: pointer; }
   @media screen and (min-width: 768px) {
     button, button.pink, button.green {
       height: 38px; } }
 
 button.pink {
   background-image: linear-gradient(-180deg, #FF6BCA 0%, #FF78CF 42%, #FF00A8 100%);
-  box-shadow: 0px 1px 1px 1px #AC0C75; }
+  box-shadow: 0px 1px 1px 1px #AC0C75;
+  width: 91px; }
+  @media screen and (min-width: 768px) {
+    button.pink {
+      width: 188px; } }
   button.pink p {
-    margin-top: 12px;
-    margin-bottom: 6px; }
+    margin-top: 8px;
+    margin-bottom: 5px; }
 
 button.green {
   background-image: linear-gradient(-180deg, #86BA2B 0%, #2A740D 100%);
-  box-shadow: 0px 1px 1px 1px #1C4F06; }
+  box-shadow: 0px 1px 1px 1px #1C4F06;
+  width: 145px; }
+  @media screen and (min-width: 768px) {
+    button.green {
+      width: 188px; } }
   button.green p {
-    margin-top: 11px;
-    margin-bottom: 7px; }
+    margin-top: 7px;
+    margin-bottom: 6px; }
 
 .status, .offers .box .status, .offers .box.opacity .status {
   background: #E9F2DF;
@@ -111,14 +124,21 @@ button.green {
 
 .offers .box.opacity .status {
   background: #7A64CC;
-  min-height: 113px; }
+  min-height: 113px;
+  height: 150px; }
 
 .offers .box.opacity {
   opacity: 0.2;
-  margin-top: 28px; }
+  height: 150px; }
+  @media screen and (min-width: 768px) {
+    .offers .box.opacity {
+      margin-top: 28px; } }
   .offers .box.opacity .tick {
     fill: #ffffff;
-    margin-top: 4.7rem; }
+    margin-top: 60px; }
+    @media screen and (min-width: 768px) {
+      .offers .box.opacity .tick {
+        margin-top: 4.7rem; } }
 
 .alert {
   background: #E7E2FE;
