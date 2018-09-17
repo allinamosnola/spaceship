@@ -30,15 +30,19 @@ h2 {
   @media screen and (min-width: 768px) {
     .box {
       min-height: 203px;
-      margin-right: 34px; } }
+      border-radius: 5.19px; } }
   .box .legend {
     text-align: center;
-    min-height: 106px;
-    line-height: 55px;
+    height: 106px;
+    line-height: 35px;
     display: inline-block; }
     @media screen and (min-width: 768px) {
       .box .legend {
-        margin: 2rem 0; } }
+        margin: 2rem 0;
+        padding: 0; } }
+    @media screen and (min-width: 996px) {
+      .box .legend {
+        padding: 0 30px; } }
     .box .legend > p {
       font-family: font91361;
       font-size: 16.33px;
@@ -52,7 +56,7 @@ h2 {
       display: inline-block; }
       @media screen and (min-width: 768px) {
         .box .legend > p {
-          font-size: 25px;
+          font-size: 24px;
           letter-spacing: 0.65px;
           line-height: 29px;
           min-height: 86px; } }
@@ -69,12 +73,24 @@ h2 {
           letter-spacing: 0.21px;
           line-height: 19.5px; } }
 
+@media screen and (min-width: 768px) {
+  .box-1, .box-3, .box-5 {
+    margin-right: 34px; } }
+
+@media screen and (max-width: 768px) {
+  .box-3 button {
+    bottom: 9px; } }
+
+.box-6 {
+  visibility: hidden; }
+
 button, button.pink, button.green {
   border-radius: 2px;
   border: none;
   text-transform: uppercase;
   height: 28px;
-  cursor: pointer; }
+  cursor: pointer;
+  position: relative; }
   @media screen and (min-width: 768px) {
     button, button.pink, button.green {
       height: 38px; } }
@@ -106,15 +122,33 @@ button.green {
   border-radius: 0px 4px 4px 0px;
   text-align: center;
   padding-left: 10px; }
+  @media screen and (min-width: 768px) {
+    .status, .offers .box .status, .offers .box.opacity .status {
+      border-radius: 0px 5.19px 5.19px 0px; } }
   .status .tick, .offers .box .status .tick {
     fill: #7ED321;
     width: 32px;
-    margin-top: 3rem; }
+    margin-top: 42px; }
     @media screen and (min-width: 768px) {
       .status .tick, .offers .box .status .tick {
-        margin-top: 4.7rem;
-        height: 42px;
+        margin-top: 85px;
+        height: 34px;
         width: 42px; } }
+  .status .wait, .offers .box .status .wait {
+    width: 23px;
+    margin-top: 42px;
+    border-radius: 50px; }
+    @media screen and (min-width: 768px) {
+      .status .wait, .offers .box .status .wait {
+        width: 31px;
+        margin-top: 86px; } }
+  .status .lock, .offers .box .status .lock {
+    width: 23px;
+    height: 36px;
+    margin-top: 60px; }
+    @media screen and (min-width: 768px) {
+      .status .lock, .offers .box .status .lock {
+        margin-top: 81px; } }
 
 .offers .box .status, .offers .box.opacity .status {
   background: #FFECD6;
@@ -126,19 +160,29 @@ button.green {
   background: #7A64CC;
   min-height: 113px;
   height: 150px; }
+  @media screen and (min-width: 768px) {
+    .offers .box.opacity .status {
+      height: auto; } }
 
 .offers .box.opacity {
-  opacity: 0.2;
   height: 150px; }
   @media screen and (min-width: 768px) {
     .offers .box.opacity {
       margin-top: 28px; } }
-  .offers .box.opacity .tick {
-    fill: #ffffff;
-    margin-top: 60px; }
+  .offers .box.opacity p {
+    margin-top: 44px; }
     @media screen and (min-width: 768px) {
-      .offers .box.opacity .tick {
-        margin-top: 4.7rem; } }
+      .offers .box.opacity p {
+        margin-top: 15px;
+        padding: 0 25px; } }
+
+.opacity > .row {
+  background: #9B88E3; }
+  .opacity > .row .status, .opacity > .row .offers .box.opacity .status, .offers .box.opacity .opacity > .row .status {
+    background: #7A64CC; }
+  .opacity > .row .legend {
+    opacity: 0.2;
+    height: auto; }
 
 .alert {
   background: #E7E2FE;

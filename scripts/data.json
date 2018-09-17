@@ -1,0 +1,32 @@
+{
+    "1":{
+      "txt": "£10 FREE BINGO BONUS TO USE NOW",
+      "btn": "Play bingo",
+      "icon": "ok.svg",
+      "iconClass":"tick"
+    },
+    "2":{
+        "txt": "50 FREE SPINS ON GEMIX TO USE NOW",
+        "btn": "Play slots",
+        "icon": "ok.svg",
+      "iconClass":"tick"        
+    },
+    "3":{
+        "txt": "1ST DEPOSIT OFFER 300% BINGO BONUS +100 FREE SPINS",
+        "btn": "Deposit to claim",
+        "icon": "wait.png",
+        "iconClass":"wait"        
+    },
+    "4":{
+          "txt": "1ST DEPOSIT OFFER 100% SLOTS BONUS",
+          "btn": "Deposit to claim",
+        "icon": "wait.png",
+      "iconClass":"wait"        
+    },
+    "5":{
+      "txt": "2ND DEPOSIT OFFER <br> 150% BINGO BONUS",
+      "btn": "",
+      "icon": "lock.svg",
+      "iconClass":"lock"
+    }
+}

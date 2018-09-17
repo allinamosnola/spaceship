@@ -1,6 +1,6 @@
 
 $break-tablet: 768px;   
-$break-desktop: 1200px;
+$break-desktop: 996px;
 
 body {
     opacity: 0.99;
@@ -35,15 +35,19 @@ h2 {
     margin-bottom: 15px;
     @media screen and (min-width: $break-tablet) {
         min-height: 203px;
-        margin-right: 34px;
+        border-radius: 5.19px;
     }
     .legend {
         text-align: center;
-        min-height: 106px;
-        line-height: 55px;
+        height: 106px;
+        line-height: 35px;
         display: inline-block;
         @media screen and (min-width: $break-tablet) {
            margin: 2rem 0;
+           padding: 0;
+        }
+        @media screen and (min-width: $break-desktop) {
+            padding: 0 30px;   
         }
         & > p {
             font-family: font91361;
@@ -57,7 +61,7 @@ h2 {
             margin-top: 15px;
             display: inline-block;
             @media screen and (min-width: $break-tablet) {
-                font-size: 25px;
+                font-size: 24px;
                 letter-spacing: 0.65px;
                 line-height: 29px;   
                 min-height: 86px;
@@ -80,12 +84,29 @@ h2 {
     }
 }
 
+.box-1, .box-3, .box-5 {
+    @media screen and (min-width: $break-tablet) {
+        margin-right: 34px;
+    }
+}
+
+.box-3 button {
+    @media screen and (max-width: $break-tablet) {
+        bottom: 9px;
+    }
+}
+
+.box-6 {
+    visibility: hidden;
+}
+
     button {
             border-radius: 2px;
             border: none;
             text-transform: uppercase;
             height: 28px;
             cursor: pointer;
+            position: relative;
             @media screen and (min-width: $break-tablet) {
                 height: 38px;   
             }
@@ -126,15 +147,36 @@ h2 {
         border-radius: 0px 4px 4px 0px;
         text-align: center;
         padding-left: 10px;
+        @media screen and (min-width: $break-tablet) {
+            border-radius: 0px 5.19px 5.19px 0px;
+        }
         .tick {            
             fill: #7ED321;
             width: 32px;
-            margin-top: 3rem;
+            margin-top: 42px;
             @media screen and (min-width: $break-tablet) {
-                margin-top: 4.7rem;
-                height: 42px;
+                margin-top: 85px;
+                height: 34px;
                 width: 42px;
                 
+            }
+        }
+        .wait {
+            width: 23px;
+            margin-top: 42px;
+            border-radius: 50px;
+            @media screen and (min-width: $break-tablet) {
+                width: 31px;
+                margin-top: 86px;
+            }
+
+        }
+        .lock {
+            width: 23px;
+            height: 36px;
+            margin-top: 60px;
+            @media screen and (min-width: $break-tablet) {
+                margin-top: 81px;
             }
         }
     }
@@ -153,20 +195,34 @@ h2 {
         background: #7A64CC;
         min-height: 113px;
         height: 150px;
+        @media screen and (min-width: $break-tablet) {
+            height: auto;
+        }
     }
     
     .offers .box.opacity {
-        opacity: 0.2;
         height: 150px;
         @media screen and (min-width: $break-tablet) {
             margin-top:28px;
         }
-        .tick {
-            fill: #ffffff;
-            margin-top: 60px;
-            @media screen and (min-width: $break-tablet) {
-                margin-top: 4.7rem;
+        p {
+            margin-top: 44px;
+            @media screen and (min-width: $break-tablet) {  
+                margin-top: 15px;
+                padding: 0 25px;
             }
+        }
+    }
+
+    
+    .opacity > .row {
+        background: #9B88E3;
+        .status {
+            background: #7A64CC;
+        }
+        .legend {
+            opacity: 0.2;
+            height: auto;
         }
     }
 
