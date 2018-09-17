@@ -3,7 +3,7 @@ $(document).ready(function () {
     $('.alert').addClass('show');
     
     $.ajax({
-        url:'scripts/data.json',
+        url:'https://raw.githubusercontent.com/allinamosnola/spaceship/master/scripts/data.json',
         dataType:'json',
         success:function(data){
             $.each(data, function(index, element) {
