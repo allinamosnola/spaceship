@@ -108,6 +108,7 @@ button.pink {
 
 button.green {
   background-image: linear-gradient(-180deg, #86BA2B 0%, #2A740D 100%);
+  background-color: #1C4F06;
   box-shadow: 0px 1px 1px 1px #1C4F06;
   width: 145px; }
   @media screen and (min-width: 768px) {
@@ -175,6 +176,9 @@ button.green {
       .offers .box.opacity p {
         margin-top: 15px;
         padding: 0 25px; } }
+    @media screen and (min-width: 1200px) {
+      .offers .box.opacity p {
+        padding: 0 55px; } }
 
 .opacity > .row {
   background: #9B88E3; }
